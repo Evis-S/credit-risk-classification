@@ -1,6 +1,9 @@
-# Module 20 Report Template
+# Module 20 Report Credit-risk-classification
+
 
 ## Overview of the Analysis
+
+* The purpose of this analysis is to generate a model that will be able to correctly identify 'healthy loan' and 'high risk loan' applicants based on application factors.
 
 In this section, describe the analysis you completed for the machine learning models used in this Challenge. This might include:
 
@@ -55,7 +58,7 @@ The logistic regression model fit with oversampled with these scores indicate ex
 ## Summary
 Based on the evaluation metrics, Logistic Regression Model 2, which is fitted with oversampled data, performs slightly better than Model 1. It has a higher precision for the '0' label and a higher macro-average F1-score, indicating better overall performance across both labels. The recall for the '1' label is also higher in Model 2.
 
-* 
+* *I would recommend using the second model because of its increased ability to accurately detect 'high risk loans'.
+ While the first model may have a slightly higher accuracy in identifying 'healthy loans', the cost of misclassifying a 'healthy credit' applicant is generally lower compared to lower compared to the cost of misclassifying a 'loan bad' with 'high risk'. on the other hand, the enhanced ability of the second model to accurately identify 'high-risk loans' exceeds the slightly higher accuracy for 'healthy loans' in the first model.
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
-If you do not recommend any of the models, please justify your reasoning.
