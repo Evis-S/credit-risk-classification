@@ -19,13 +19,14 @@ the number of accounts the borrower held
 derogatory marks against the borrower
 the total debt
 
-<img width="876" alt="Screenshot 2023-07-17 at 9 56 35 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/0d74f318-b73d-4feb-89ab-3e2051f57ef4">
+<img width="850" alt="Screenshot 2023-07-17 at 11 42 46 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/4b3c2446-2899-4479-afe7-3ea80eb209f3">
+
 
 
 The dataset (77,536 data points) was split into training and testing sets. 
+<img width="413" alt="Screenshot 2023-07-17 at 11 42 52 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/0be72611-e94d-48b3-9040-7dd333160641">
 
 
-<img width="388" alt="Screenshot 2023-07-17 at 9 55 50 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/f06931fa-ba4d-495c-9e37-258a5b07d33c">
 
 The training set was used to build an initial logistic regression model (Logistic Regression Model 1) using the LogisticRegression module from scikit-learn. 
 Logistic Regression Model 1 was then applied to the testing dataset. The purpose of the model was to determine whether a loan to the borrower in the testing set would be low- or high-risk and results are summarized below.
@@ -39,19 +40,22 @@ The resampled data was used to build a new logistic regression model (Logistic R
 
 Logistic Regression Model 1:
 
-Screenshot 2023-07-17 at 9 44 24 PM
+<img width="542" alt="Screenshot 2023-07-17 at 11 42 10 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/6ac0ddb0-87f9-4591-a379-a26be009abb1">
+
+
 The logistic regression model with these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.85. The overall accuracy of the model is 0.99. The macro-average F1-score, for the model is 0.94, reflecting good overall performance across both labels. The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
 
 *Logistic Regression Model 2:
+<img width="635" alt="Screenshot 2023-07-17 at 11 42 29 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/b490497c-6ee2-48ac-ac6b-4e1be35bf5c0">
 
-Screenshot 2023-07-17 at 9 46 46 PM
+
 
 The logistic regression model fit with oversampled with these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.84. The overall accuracy of the model is 0.99. The macro-average F1-score, for the model is 0.95, reflecting good overall performance across both labels. The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
 
 ## Summary
+Based on the evaluation metrics, Logistic Regression Model 2, which is fitted with oversampled data, performs slightly better than Model 1. It has a higher precision for the '0' label and a higher macro-average F1-score, indicating better overall performance across both labels. The recall for the '1' label is also higher in Model 2.
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
+* 
 * Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
 
 If you do not recommend any of the models, please justify your reasoning.
