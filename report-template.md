@@ -7,12 +7,18 @@
   
 ## Factors considered in the analysis included data on:
   
-*size of the loan,
-* interest rate
+*size of the loan
+
+*interest rate
+
 *borrower's income
+
 * debt to income ratio
+  
 *number of accounts the borrower held
+
 *derogatory marks against the borrower
+
 *the total debt
 
 <img width="850" alt="Screenshot 2023-07-17 at 11 42 46 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/4b3c2446-2899-4479-afe7-3ea80eb209f3">
