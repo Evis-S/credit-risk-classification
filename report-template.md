@@ -7,7 +7,7 @@
   
 * Factors considered in the analysis included data on:
   
-the size of the loan
+the size of the loan,
 its interest rate
 the borrower's income
 the debt to income ratio
