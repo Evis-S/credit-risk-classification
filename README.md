@@ -3,33 +3,20 @@ Background
 
 In this Challenge, I used various techniques to train and evaluate a model based on loan risk. I used a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
 
-*Factors considered in the analysis included data on:
+Steps:
+Split the Data into Training and Testing Sets
+Open the starter code notebook and then use it to complete the following steps.
+Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
+Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
+Note A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
+Check the balance of the labels variable (y) by using the value_counts function.
+Split the data into training and testing datasets by using train_test_split.
+Create a Logistic Regression Model with the Original Data
+Employ your knowledge of logistic regression to complete the following steps:
+Fit a logistic regression model by using the training data (X_train and y_train).
+Save the predictions on the testing data labels by using the testing feature data (X_test) and the fitted model.
+Evaluate the model’s performance by doing the following:
+Calculate the accuracy score of the model.
+Generate a confusion matrix.
+Print the classification report.
 
-the size of the loan
-its interest rate
-the borrower's income
-the debt to income ratio
-the number of accounts the borrower held
-derogatory marks against the borrower
-the total debt
-
-*** Results:**
-* Logistic Regression Model 1:
-
-  
- <img width="438" alt="Screenshot 2023-07-17 at 9 44 24 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/24165dd6-d9b4-4165-8584-822fab72efb9">
-
-The logistic regression model with  these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.85.
-The overall accuracy of the model is 0.99.
-The macro-average F1-score, for the model  is 0.94, reflecting good overall performance across both labels.
-The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
-
-*Logistic Regression Model 2:
-
-
-<img width="544" alt="Screenshot 2023-07-17 at 9 46 46 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/58eef757-411e-47ef-8093-c26d7cd13ba8">
-
-The logistic regression model fit with oversampled  with  these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.84.
-The overall accuracy of the model is 0.99.
-The macro-average F1-score, for the model  is 0.95, reflecting good overall performance across both labels.
-The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
