@@ -1,4 +1,4 @@
-# Module 12 Report Template
+# Module 20 Report Template
 
 ## Overview of the Analysis
 
@@ -10,13 +10,36 @@ In this section, describe the analysis you completed for the machine learning mo
 * Describe the stages of the machine learning process you went through as part of this analysis.
 * Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
 
+* Factors considered in the analysis included data on:
+the size of the loan
+its interest rate
+the borrower's income
+the debt to income ratio
+the number of accounts the borrower held
+derogatory marks against the borrower
+the total debt
+
+<img width="876" alt="Screenshot 2023-07-17 at 9 56 35 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/0d74f318-b73d-4feb-89ab-3e2051f57ef4">
+
+
+The dataset (77,536 data points) was split into training and testing sets. 
+<img width="388" alt="Screenshot 2023-07-17 at 9 55 50 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/f06931fa-ba4d-495c-9e37-258a5b07d33c">
+
+The training set was used to build an initial logistic regression model (Logistic Regression Model 1) using the LogisticRegression module from scikit-learn. 
+Logistic Regression Model 1 was then applied to the testing dataset. The purpose of the model was to determine whether a loan to the borrower in the testing set would be low- or high-risk and results are summarized below.
+
+This intial model was drawing from a dataset that had 75,036 healthy  loan data points and 2,500 high-risk data points. To resample the training data and ensure that the logistic regression model had an equal number of data points to draw from, the training set data was resampled with the RandomOverSampler module from imbalanced-learn. This generated 56,277 data points for both healthy loan (0) and high-risk (1) loans, based on the original dataset.
+
+The resampled data was used to build a new logistic regression model (Logistic Regression Model 2). The purpose of Logistic Regression Model 2 was to determine whether a loan to the borrower in the testing set would be healthy loan or high-risk loan. The results are summarized below.
+
+
+
 ## Results
 
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
   * Description of Model 1 Accuracy, Precision, and Recall scores.
-
 
 
 * Machine Learning Model 2:
