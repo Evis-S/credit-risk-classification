@@ -5,15 +5,15 @@
 
 * The purpose of this analysis is to generate a model that will be able to correctly identify 'healthy loan' and 'high risk loan' applicants based on application factors.
   
-* Factors considered in the analysis included data on:
+## Factors considered in the analysis included data on:
   
-the size of the loan,
-its interest rate
-the borrower's income
-the debt to income ratio
-the number of accounts the borrower held
-derogatory marks against the borrower
-the total debt
+*size of the loan,
+* interest rate
+*borrower's income
+* debt to income ratio
+*number of accounts the borrower held
+*derogatory marks against the borrower
+*the total debt
 
 <img width="850" alt="Screenshot 2023-07-17 at 11 42 46 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/4b3c2446-2899-4479-afe7-3ea80eb209f3">
 
