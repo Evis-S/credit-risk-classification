@@ -1,4 +1,4 @@
-# Module 20 Report Credit-risk-classification
+# Module 20: Report Credit-Risk-Classification
 
 
 ## Overview of the Analysis
@@ -6,6 +6,7 @@
 * The purpose of this analysis is to generate a model that will be able to correctly identify 'healthy loan' and 'high risk loan' applicants based on application factors.
   
 * Factors considered in the analysis included data on:
+  
 the size of the loan
 its interest rate
 the borrower's income
@@ -18,12 +19,14 @@ the total debt
 
 Steps: 
 * Split the Data into Training and Testing Sets
+* 
 Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
 Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
 Split the data into training and testing datasets by using train_test_split.
 <img width="540" alt="Screenshot 2023-07-18 at 12 40 04 AM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/d68e8f24-9c57-4a79-9598-b2b1716541db">
 
 *Create a Logistic Regression Model 1  with the Original Data
+*
 Fit a logistic regression model by using the training data (X_train and y_train).
 Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
 Evaluate the model’s performance by doing the following:
@@ -32,6 +35,7 @@ Print the classification report.
 <img width="531" alt="Screenshot 2023-07-18 at 12 47 27 AM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/658249a4-aed0-4961-aadc-9bee855e3bc9">
 
 *Create a Logistic Regression Model 2  with the  Oversample Data
+*
 Import RandomOverSampler 
 Fit a logistic regression model by using the training data (X_train and y_train).
 Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
