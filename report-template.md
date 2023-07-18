@@ -1,9 +1,11 @@
-# Module 20: Report Credit-Risk-Classification
+  # Module 20: Report Credit-Risk-Classification
 
 
 ## Overview of the Analysis
 
-* The purpose of this analysis is to generate a model that will be able to correctly identify 'healthy loan' and 'high risk loan' applicants based on application factors.
+## Purpose
+
+ The purpose of this analysis is to generate a model that will be able to correctly identify 'healthy loan' and 'high risk loan' applicants based on application factors.
   
 ## Factors considered in the analysis included data on:
   
@@ -22,31 +24,44 @@
 
 <img width="850" alt="Screenshot 2023-07-17 at 11 42 46 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/4b3c2446-2899-4479-afe7-3ea80eb209f3">
 
-Steps: 
-* Split the Data into Training and Testing Sets
-* 
-Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
-Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
-Split the data into training and testing datasets by using train_test_split.
+ ## Steps: 
+ 
+1.Split the Data into Training and Testing Sets
+  
+* Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
+  
+* Create the labels set (y) from the “loan_status” column, and then create the features (X) DataFrame from the remaining columns.
+  
+* Split the data into training and testing datasets by using train_test_split.
+  
 <img width="540" alt="Screenshot 2023-07-18 at 12 40 04 AM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/d68e8f24-9c57-4a79-9598-b2b1716541db">
 
-*Create a Logistic Regression Model 1  with the Original Data
-*
-Fit a logistic regression model by using the training data (X_train and y_train).
-Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
-Evaluate the model’s performance by doing the following:
-Generate a confusion matrix.
-Print the classification report.
+2.Create a Logistic Regression Model 1  with the Original Data
+
+* Fit a logistic regression model by using the training data (X_train and y_train).
+
+* Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
+
+* Evaluate the model’s performance by doing the following:
+
+* Generate a confusion matrix.
+
+* Print the classification report.
+  
 <img width="531" alt="Screenshot 2023-07-18 at 12 47 27 AM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/658249a4-aed0-4961-aadc-9bee855e3bc9">
 
-*Create a Logistic Regression Model 2  with the  Oversample Data
-*
-Import RandomOverSampler 
-Fit a logistic regression model by using the training data (X_train and y_train).
-Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
-Evaluate the model’s performance by doing the following:
-Generate a confusion matrix.
-Print the classification report.
+3.Create a Logistic Regression Model 2  with the  Oversample Data
+
+* Import RandomOverSampler 
+
+* Fit a logistic regression model by using the training data (X_train and y_train).
+
+* Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
+
+* Evaluate the model’s performance by doing the following:
+
+* Generate a confusion matrix.
+* Print the classification report.
 
 <img width="559" alt="Screenshot 2023-07-18 at 12 57 15 AM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/1705536d-c353-4244-9a7f-35adbbdd89dc">
 
@@ -54,12 +69,11 @@ Print the classification report.
 
 
 The dataset (77,536 data points) was split into training and testing sets. 
+
 <img width="413" alt="Screenshot 2023-07-17 at 11 42 52 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/0be72611-e94d-48b3-9040-7dd333160641">
 
 
 This intial model was drawing from a dataset that had 75,036 healthy  loan data points and 2,500 high-risk data points. To resample the training data and ensure that the logistic regression model had an equal number of data points to draw from, the training set data was resampled with the RandomOverSampler module from imbalanced-learn. This generated 56,277 data points for both healthy loan (0) and high-risk (1) loans, based on the original dataset.
-
-
 The training set was used to build an initial logistic regression model (Logistic Regression Model 1) using the LogisticRegression module from scikit-learn. 
 Logistic Regression Model 1 was then applied to the testing dataset. The purpose of the model was to determine whether a loan to the borrower in the testing set would be healthy or high-risk. The resampled data was used to build a new logistic regression model (Logistic Regression Model 2). The purpose of Logistic Regression Model 2 was to determine whether a loan to the borrower in the testing set would be healthy loan or high-risk loan. 
 
