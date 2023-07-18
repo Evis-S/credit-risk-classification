@@ -89,6 +89,8 @@ Logistic Regression Model 1:
 The logistic regression model with these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.85. The overall accuracy of the model is 0.99. The macro-average F1-score, for the model is 0.94, reflecting good overall performance across both labels. The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
 
 *Logistic Regression Model 2:
+
+
 <img width="635" alt="Screenshot 2023-07-17 at 11 42 29 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/b490497c-6ee2-48ac-ac6b-4e1be35bf5c0">
 
 
