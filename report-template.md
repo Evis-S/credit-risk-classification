@@ -23,6 +23,8 @@ the total debt
 
 
 The dataset (77,536 data points) was split into training and testing sets. 
+
+
 <img width="388" alt="Screenshot 2023-07-17 at 9 55 50 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/f06931fa-ba4d-495c-9e37-258a5b07d33c">
 
 The training set was used to build an initial logistic regression model (Logistic Regression Model 1) using the LogisticRegression module from scikit-learn. 
@@ -33,17 +35,18 @@ This intial model was drawing from a dataset that had 75,036 healthy  loan data 
 The resampled data was used to build a new logistic regression model (Logistic Regression Model 2). The purpose of Logistic Regression Model 2 was to determine whether a loan to the borrower in the testing set would be healthy loan or high-risk loan. The results are summarized below.
 
 
+*** Results:**
 
-## Results
+Logistic Regression Model 1:
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
+Screenshot 2023-07-17 at 9 44 24 PM
+The logistic regression model with these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.85. The overall accuracy of the model is 0.99. The macro-average F1-score, for the model is 0.94, reflecting good overall performance across both labels. The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
 
-* Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+*Logistic Regression Model 2:
 
+Screenshot 2023-07-17 at 9 46 46 PM
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
+The logistic regression model fit with oversampled with these scores indicate excellent performance for '0'(healthy loans) with the precision 1.00 and reasonably good performance for '1' (high-risk loans) with the precision 0.84. The overall accuracy of the model is 0.99. The macro-average F1-score, for the model is 0.95, reflecting good overall performance across both labels. The weighted average F1-score, considering the class imbalance in the dataset, is 0.99, indicating high accuracy.
 
 ## Summary
 
