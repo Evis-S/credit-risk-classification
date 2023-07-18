@@ -4,11 +4,7 @@
 ## Overview of the Analysis
 
 * The purpose of this analysis is to generate a model that will be able to correctly identify 'healthy loan' and 'high risk loan' applicants based on application factors.
-
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
-
+  
 * Factors considered in the analysis included data on:
 the size of the loan
 its interest rate
@@ -19,6 +15,7 @@ derogatory marks against the borrower
 the total debt
 
 <img width="850" alt="Screenshot 2023-07-17 at 11 42 46 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/4b3c2446-2899-4479-afe7-3ea80eb209f3">
+
 Steps: 
 * Split the Data into Training and Testing Sets
 Read the lending_data.csv data from the Resources folder into a Pandas DataFrame.
@@ -41,6 +38,7 @@ Save the predictions for the testing data labels by using the testing feature da
 Evaluate the model’s performance by doing the following:
 Generate a confusion matrix.
 Print the classification report.
+
 <img width="559" alt="Screenshot 2023-07-18 at 12 57 15 AM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/1705536d-c353-4244-9a7f-35adbbdd89dc">
 
 
@@ -50,13 +48,11 @@ The dataset (77,536 data points) was split into training and testing sets.
 <img width="413" alt="Screenshot 2023-07-17 at 11 42 52 PM" src="https://github.com/Evis-S/credit-risk-classification/assets/125109090/0be72611-e94d-48b3-9040-7dd333160641">
 
 
-
-The training set was used to build an initial logistic regression model (Logistic Regression Model 1) using the LogisticRegression module from scikit-learn. 
-Logistic Regression Model 1 was then applied to the testing dataset. The purpose of the model was to determine whether a loan to the borrower in the testing set would be healthy or high-risk and results are summarized below.
-
 This intial model was drawing from a dataset that had 75,036 healthy  loan data points and 2,500 high-risk data points. To resample the training data and ensure that the logistic regression model had an equal number of data points to draw from, the training set data was resampled with the RandomOverSampler module from imbalanced-learn. This generated 56,277 data points for both healthy loan (0) and high-risk (1) loans, based on the original dataset.
 
-The resampled data was used to build a new logistic regression model (Logistic Regression Model 2). The purpose of Logistic Regression Model 2 was to determine whether a loan to the borrower in the testing set would be healthy loan or high-risk loan. The results are summarized below.
+
+The training set was used to build an initial logistic regression model (Logistic Regression Model 1) using the LogisticRegression module from scikit-learn. 
+Logistic Regression Model 1 was then applied to the testing dataset. The purpose of the model was to determine whether a loan to the borrower in the testing set would be healthy or high-risk. The resampled data was used to build a new logistic regression model (Logistic Regression Model 2). The purpose of Logistic Regression Model 2 was to determine whether a loan to the borrower in the testing set would be healthy loan or high-risk loan. 
 
 
 
